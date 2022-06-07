@@ -12,12 +12,12 @@ contract WavePortal {
 
     function wave() public {
         totalWaves += 1;
-       console.log("%s has waved!", msg.sender);
+        console.log("%s has waved!", msg.sender);
     }
 
     function waveAndSayHi() public {
-       wave();
-       console.log("Hi there");
+        wave();
+        console.log("Hi there");
     }
 
     function getTotalWaves() public view returns (uint256) {
@@ -25,4 +25,3 @@ contract WavePortal {
         return totalWaves;
     }
 }
-
